@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ヘイフィールド Entrance Book｜採用情報</title>
+<style>
+:root{
+  --navy:#1D1B33; --violet:#5D5CE6; --violet2:#7B6FE0; --lav:#B9AEE0;
+  --bg:#F4F4F4; --card:#FFFFFF; --line:#E6E4EF; --ink:#48484E; --head:#1D1B33;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  line-height:2;font-size:15px}
+a{color:var(--violet);text-decoration:none}
+a:hover{opacity:.85}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);z-index:30;border-bottom:1px solid var(--line)}
+header .bar{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-style:italic;font-size:22px;color:var(--navy);letter-spacing:-.02em}
+.logo svg{width:26px;height:26px}
+header .cta-pill{background:var(--violet);color:#fff;font-weight:700;font-style:italic;border-radius:999px;padding:10px 26px;font-size:14px;white-space:nowrap}
+header .cta-pill:hover{opacity:.9}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(120deg,#6D5FD8 0%,#8E7BD8 45%,#B9AEE0 100%);color:#fff;padding:110px 0 96px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:repeating-radial-gradient(circle at 85% 120%, transparent 0, transparent 58px, rgba(255,255,255,.10) 60px, transparent 62px),
+                   repeating-radial-gradient(circle at 8% -30%, transparent 0, transparent 78px, rgba(255,255,255,.08) 80px, transparent 82px);}
+.hero .wrap{position:relative}
+.hero .en{font-size:clamp(52px,8vw,84px);font-weight:800;font-style:italic;line-height:1.05;letter-spacing:-.02em;margin:0}
+.hero .jp{font-size:14px;font-weight:600;margin:14px 0 0;letter-spacing:.08em}
+.hero .lead{margin-top:34px;max-width:36em;font-size:15.5px;color:rgba(255,255,255,.92)}
+
+/* navy band */
+.band{background:var(--navy);color:#fff;padding:72px 0}
+.band .big{font-size:clamp(24px,4vw,36px);font-weight:800;line-height:1.6;margin:0 0 34px}
+.collage{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.collage img{width:100%;height:200px;object-fit:cover;border-radius:8px;display:block;margin:0}
+@media(max-width:640px){.collage{grid-template-columns:repeat(2,1fr)}.collage img{height:130px}}
+
+/* nav */
+nav{position:sticky;top:61px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:20}
+nav .row{max-width:1200px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:0 16px;scrollbar-width:none}
+nav .row::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;padding:13px 12px;font-size:12.5px;font-weight:700;color:var(--ink);border-bottom:2.5px solid transparent;white-space:nowrap}
+nav a:hover{color:var(--violet);border-bottom-color:var(--violet);opacity:1}
+
+/* sections */
+section{padding:76px 0 30px}
+section:nth-of-type(even){background:#fff}
+.sec-head{margin:0 0 34px}
+.sec-head .en{display:block;font-size:clamp(34px,5vw,52px);font-weight:800;font-style:italic;color:var(--head);line-height:1.1;letter-spacing:-.01em}
+.sec-head .jp{display:inline-block;font-size:13px;font-weight:700;color:var(--violet);margin-top:10px;letter-spacing:.06em;border-left:3px solid var(--violet);padding-left:10px}
+h3{font-size:19px;font-weight:800;color:var(--head);margin:40px 0 12px;line-height:1.5}
+h4{font-size:15.5px;font-weight:700;margin:26px 0 8px;color:var(--violet)}
+p{max-width:46em}
+strong{color:var(--head)}
+.muted{font-size:.88em;color:#8A8794}
+ul,ol{padding-left:1.4em;max-width:46em}
+li{margin:6px 0}
+li::marker{color:var(--violet)}
+blockquote{border-left:4px solid var(--violet);margin:20px 0;padding:6px 20px;font-weight:700;font-size:17px;color:var(--head)}
+hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+.callout{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--violet);border-radius:12px;padding:18px 22px;margin:18px 0;box-shadow:0 2px 12px rgba(29,27,51,.05)}
+section:nth-of-type(even) .callout{background:var(--bg)}
+.callout.c-blue{border-left-color:#4A90E2}
+.callout.c-green{border-left-color:#3FA97C}
+.callout.c-yellow{border-left-color:#E0A93F}
+.callout .ic{flex:0 0 auto;font-size:20px}
+.tablewrap{overflow-x:auto;margin:16px 0;border-radius:12px;box-shadow:0 2px 12px rgba(29,27,51,.05)}
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+th{color:#fff;font-weight:700;white-space:nowrap;background:var(--navy)}
+td:first-child{font-weight:700;color:var(--head);white-space:nowrap}
+img{max-width:100%;border-radius:12px;margin:12px 0;display:block}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:12px 0}
+.cols img{margin:0;height:100%;object-fit:cover}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:12px 0;padding:0 22px;box-shadow:0 2px 12px rgba(29,27,51,.05)}
+details[open]{border-color:var(--violet)}
+summary{cursor:pointer;font-weight:700;padding:16px 0;font-size:14.5px;color:var(--head)}
+summary::marker{color:var(--violet)}
+.dbody{padding:0 0 16px;font-size:14px}
+.video{position:relative;padding-top:56.25%;margin:18px 0;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(29,27,51,.12)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* floating cta */
+.float-cta{position:fixed;right:18px;bottom:18px;z-index:40}
+.float-cta a{display:flex;align-items:center;gap:8px;background:var(--violet);color:#fff;font-weight:700;font-size:13.5px;border-radius:999px;padding:14px 24px;box-shadow:0 6px 24px rgba(93,92,230,.45)}
+.float-cta a:hover{opacity:.92}
+.float-cta .arr{font-style:normal}
+
+/* footer */
+footer{background:var(--navy);color:#B9B2D8;padding:64px 0 72px;font-size:13px;margin-top:60px}
+footer .en{font-size:clamp(30px,4vw,44px);font-weight:800;font-style:italic;color:#fff;margin:0 0 8px;line-height:1.2}
+footer a{color:#D9D4F2}
+footer .cta-pill{display:inline-block;background:var(--violet);color:#fff;font-weight:700;border-radius:999px;padding:14px 34px;margin:22px 0;font-size:15px}
+footer .logo{color:#fff;margin-top:34px}
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <div class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 13 L10 7 L8 13 Z" fill="#5D5CE6"/><path d="M9 15 L20 6 L16 16 Z" fill="#1D1B33"/></svg>hayfield</div>
+  <a class="cta-pill" href="https://www.job.persona-ats.com/ja/hayfield" target="_blank" rel="noopener">Entry →</a>
+</div></header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1 class="en">Entrance Book</h1>
+    <p class="jp">株式会社ヘイフィールド 採用エントランスブック</p>
+    <p class="lead">不動産業界の「はたらく」を変える、No.1エージェントの中身を全部見せます。選考の前に、私たちのすべてをお伝えするページです。</p>
+  </div>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <p class="big">私たちは一緒に働く<br>仲間を募集しています。</p>
+    <div class="collage"><!--COLLAGE--></div>
+  </div>
+</div>
+
+<nav><div class="row"><!--NAV--></div></nav>
+<!--SECTIONS-->
+
+<footer>
+  <div class="wrap">
+    <p class="en">Join us.</p>
+    <p>ここまで読んでいただきありがとうございます。<br>少しでも共感いただけたら、ぜひお話ししましょう。</p>
+    <a class="cta-pill" href="https://www.job.persona-ats.com/ja/hayfield" target="_blank" rel="noopener">募集要項・エントリー →</a>
+    <p><a href="https://hayfield.jp/" target="_blank" rel="noopener">コーポレートサイト</a>｜<a href="https://hayfield.jp/recruit/" target="_blank" rel="noopener">採用情報</a>｜<a href="https://www.wantedly.com/companies/company_38863/stories" target="_blank" rel="noopener">Wantedly</a></p>
+    <div class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 13 L10 7 L8 13 Z" fill="#7B6FE0"/><path d="M9 15 L20 6 L16 16 Z" fill="#FFFFFF"/></svg>hayfield</div>
+  </div>
+</footer>
+
+<div class="float-cta"><a href="https://www.job.persona-ats.com/ja/hayfield" target="_blank" rel="noopener">中途採用 募集要項・エントリー <span class="arr">→</span></a></div>
+</body>
+</html>

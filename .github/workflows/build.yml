@@ -1,0 +1,44 @@
+name: Build & Deploy
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 09:00 JST
+    - cron: '0 8 * * *'   # 17:00 JST
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate site from Notion
+        run: python3 generate_site.py site_out
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site_out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
